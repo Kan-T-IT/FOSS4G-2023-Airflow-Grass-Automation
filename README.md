@@ -9,7 +9,7 @@
 ## GRASS SETUP
 
 ### Prerequisites
-- Docker installed
+- Docker installed - lasted version
 - Permissions to execute Docker
 
 ### Setup
@@ -17,11 +17,16 @@
   - For this step, we will pull the image from DockerHub
 
  ```bash 
-docker pull mundialis/grass-py3-pdal:8.2.1-alpine
+docker pull mundialis/grass-py3-pdal:8.2.1-alpine 
 ```
-Download vector data
+Note: for MAC jump to Exercise steps
 
+### Download vector data
 https://overpass-turbo.eu/s/1wn5
+
+### Exercise steps
+
+[steps to follow](https://github.com/Kan-T-IT/FOSS4G-2023-Airflow-Grass-Automation/blob/main/CHEATSHEET.md)
 
 - Initial Setup
   - Mapset creation
