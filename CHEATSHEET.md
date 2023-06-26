@@ -2,6 +2,10 @@ Pull the image
  ```bash 
 docker pull mundialis/grass-py3-pdal:8.2.1-alpine
 ```
+Note: for MAC not execute for step. Is necesary configuration compatibility with linux/amd64, is Rosetta simulation. 
+
+[step for configuration](./MACconfigurationDocker.md)
+
 Create grass directory
  ```bash 
 cd /opt
@@ -17,6 +21,11 @@ Run GRASS from a container in Docker
 (important, being in /opt/grass)
  ```bash 
 docker run -v ./grassdata:/grassdb -it mundialis/grass-py3-pdal:8.2.1-alpine bash
+```
+Note: for **MAC** is important execute: 
+
+```bash
+docker run -v ./grassdata:/grassdb -it --platform=linux/amd64 mundialis/grass-py3-pdal:8.2.1-alpine bash
 ```
 
 cd to volume
