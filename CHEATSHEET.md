@@ -37,7 +37,7 @@ r.in.gdal input=T34TDM_20220715T093051_B04_10m.jp2 output=band_4
 r.in.gdal input=T34TDM_20220715T093051_B08_10m.jp2 output=band_8
 ```
 
-set region
+set region and create the NDVI
  ```bash 
 g.region raster=band_4 -p
 i.vi red=band_4 nir=band_8 viname=ndvi output=NDVI --overwrite

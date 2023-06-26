@@ -22,4 +22,9 @@ docker pull mundialis/grass-py3-pdal:8.2.1-alpine
 
 - Initial Setup
   - Mapset creation
+- Importing the data
+- Buffering vector
+- NDVI
+- MASKING
+- Exporting
 
